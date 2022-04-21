@@ -1,14 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
 html {
-    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.section1 {
+    background-size: cover;
+    height: 42vh;
+    padding-left: 7%;
+    padding-right: 7%;
+    display: flex;
+}
+
+.section1 h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.section2 {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.section2 img {
+    height: 100%;
+    width: 100%;
+}
+
+.section2 h2 {
+    font-size: 4vh;
+}
+
+.section2 p {
+    font-size: x-large;
+}
+
+.section3 {
+    background-color: #25eda5;
+    text-align: center;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 12px;
+}
+
+.section3 h2 {
+    font-size: 4vh;
+}
+
+.section3 img {
+    height: 80%;
+    width: 80%;
+}
+
+.section3 p {
+    font-size: xx-small;
+}
+
+.section4 {
+    font-size: large;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.section4 img {
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.section5 img {
+    height: 100%;
+    width: 100%;
+}
+
+.section6 {
+    background-color: #46a6fc;
+    text-align: center;
+    padding-left: 7%;
+    padding-right: 7%;
 }
 
 
 /* Redimensión de fuente utilizando rem */
-
-p {
-    font-size: 1rem;
-}
 
 h1 {
     font-size: 3rem;
@@ -34,32 +107,6 @@ h6 {
     font-size: 1.05rem;
 }
 
-.grey {
-    color: gray;
-}
-
-.header h1 {
-    color: darkcyan;
-}
-
-.white {
-    color: white;
-}
-
-.section-1 {
-    background-color: aquamarine;
-    text-align: center;
-}
-
-.section-2 {
-    background-color: deepskyblue;
-    text-align: center;
-}
-
-.section-3 {
-    background-color: black;
-}
-
 
 /**************************/
 
@@ -72,35 +119,6 @@ h6 {
 
 body {
     margin: 0;
-}
-
-.padding-m {
-    padding: 2.5%;
-}
-
-img {
-    border-radius: 3px;
-    width: 100%;
-}
-
-.grow {
-    font-size: 300%;
-}
-
-.helps {
-    font-size: 250%;
-}
-
-.have {
-    font-size: 90%;
-}
-
-.foot {
-    font-size: 70%;
-}
-
-.image {
-    background-image: url("../img/banner-2.jpg");
 }
 
 
@@ -118,25 +136,21 @@ img {
 .column-1 {
     width: 100%;
     float: left;
-    padding: 5%;
 }
 
 .column-2 {
     width: 50%;
     float: left;
-    padding: 5%;
 }
 
 .column-3 {
     width: 33.33%;
     float: left;
-    padding: 5%;
 }
 
 .column-4 {
     width: 25%;
     float: left;
-    padding: 5%;
 }
 
 .column-5 {
@@ -157,14 +171,39 @@ img {
 
 /* Otras clases */
 
+.centrado {
+    text-align: center;
+}
 
-/* clase para centrar contenido en horizontal y vertical (lo centra respecto al elemento padre) */
+img {
+    height: 100px;
+    object-fit: cover;
+}
+
+.padding-m {
+    padding: 3%;
+}
+
+#footer {
+    font-size: xx-small;
+    padding-left: 8%;
+    padding-right: 8%;
+}
 
 .flex {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-position: center;
 }
+
+#header {
+    color: black;
+    align-items: center;
+}
+
+
+/* clase para centrar contenido en horizontal y vertical (lo centra respecto al elemento padre) */
 
 @media only screen and (max-width: 600px) {
     /* column-2 pasará de tener 50% a 100% */
@@ -173,10 +212,14 @@ img {
     }
     /* column-3 pasará de tener 33.33% a 100% */
     .column-3 {
-        width: 100%;
+        width: 50%;
     }
     /* column-4 pasará de tener 25% a 50% */
     .column-4 {
         width: 50%;
+    }
+    .section1 {
+        background-size: cover;
+        height: 70vh;
     }
 }
