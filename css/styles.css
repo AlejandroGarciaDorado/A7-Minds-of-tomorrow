@@ -5,6 +5,7 @@ html {
 
 .section1 {
     background-size: cover;
+    text-align: center;
     height: 42vh;
     padding-left: 7%;
     padding-right: 7%;
@@ -57,20 +58,28 @@ html {
 }
 
 .section4 {
-    font-size: large;
     padding-left: 7%;
-    padding-right: 7%;
+    padding-right: 10%;
+}
+
+.section4 h2 {
+    font-size: 4vh;
+}
+
+.section4 p {
+    font-size: 2.4vh;
 }
 
 .section4 img {
-    align-items: center;
     height: 100%;
     width: 100%;
+    display: flex;
 }
 
 .section5 img {
     height: 100%;
     width: 100%;
+    padding: 0%;
 }
 
 .section6 {
@@ -106,9 +115,6 @@ h5 {
 h6 {
     font-size: 1.05rem;
 }
-
-
-/**************************/
 
 
 /* clases predefinidas */
@@ -184,10 +190,11 @@ img {
     padding: 3%;
 }
 
-#footer {
+.footer {
     font-size: xx-small;
     padding-left: 8%;
     padding-right: 8%;
+    background-color: black;
 }
 
 .flex {
@@ -200,6 +207,12 @@ img {
 #header {
     color: black;
     align-items: center;
+}
+
+#footer {
+    color: white;
+    padding: 10vh;
+    background-color: black;
 }
 
 
@@ -221,5 +234,20 @@ img {
     .section1 {
         background-size: cover;
         height: 70vh;
+    }
+    .section6 h2 {
+        font-size: 3vh;
+    }
+    .section3 p {
+        font-size: 2vh;
+    }
+    .section4 p {
+        font-size: 3vh;
+    }
+    .section6 h2 {
+        font-size: 4vh;
+    }
+    #footer {
+        padding: 4vh;
     }
 }
